@@ -1,0 +1,2 @@
+# IntelligentAGVSchedulingSystemByQt
+使用Qt框架的分布式智能AGV调度系统
