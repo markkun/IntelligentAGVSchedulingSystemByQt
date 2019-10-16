@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,10 +16,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    AgvBase.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    AgvBase.h \
     mainwindow.h
 
 FORMS += \
@@ -29,3 +31,8 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    ../../Document/3206c6b60775ba2f86cc0aaf13fcda8.png \
+    Document/IntelligentAGVSchedulingSystem.mdj \
+    Document/分布式智能AGV调度系统通信协议.docx
