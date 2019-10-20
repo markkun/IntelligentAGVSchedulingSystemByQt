@@ -17,11 +17,31 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     AgvBase.cpp \
+    ArmAgv.cpp \
+    ForkAgv.cpp \
+    LiftingAgv.cpp \
+    ProtocolBase.cpp \
+    ProtocolPlc.cpp \
+    ProtocolStm32.cpp \
+    PullAgv.cpp \
+    RfidBase.cpp \
+    SubmersibleAgv.cpp \
+    TransferAgv.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     AgvBase.h \
+    ArmAgv.h \
+    ForkAgv.h \
+    LiftingAgv.h \
+    ProtocolBase.h \
+    ProtocolPlc.h \
+    ProtocolStm32.h \
+    PullAgv.h \
+    RfidBase.h \
+    SubmersibleAgv.h \
+    TransferAgv.h \
     mainwindow.h
 
 FORMS += \
@@ -35,4 +55,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     ../../Document/3206c6b60775ba2f86cc0aaf13fcda8.png \
     Document/IntelligentAGVSchedulingSystem.mdj \
+    Document/仓库平面布局图（2.3横梁不含一区货架）V3.0-20191021.dwg \
     Document/分布式智能AGV调度系统通信协议.docx
